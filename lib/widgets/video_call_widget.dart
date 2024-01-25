@@ -1,5 +1,5 @@
 import 'package:agora_uikit/agora_uikit.dart';
-import 'package:agoraexample/screens/constants.dart';
+import 'package:agoraexample/constants.dart';
 import 'package:flutter/material.dart';
 
 class BaseVideoCallPage extends StatefulWidget {

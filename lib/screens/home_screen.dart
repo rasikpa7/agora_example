@@ -1,12 +1,7 @@
 import 'dart:developer';
-
-import 'package:agoraexample/widgets/video_call_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:agora_rtc_engine/agora_rtc_engine.dart';
-import 'package:agora_token_service/agora_token_service.dart';
-import 'package:agora_uikit/agora_uikit.dart';
-import 'package:permission_handler/permission_handler.dart';
-import 'package:agoraexample/screens/constants.dart';
+import 'package:agoraexample/constants.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -29,13 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Future<void> initAgora() async {
     //create the engine
     try {
-
-      
-
       _engine = createAgoraRtcEngine();
-
-    
-
     await _engine.initialize(const RtcEngineContext(
       appId: agoraId,
       channelProfile: ChannelProfileType.channelProfileLiveBroadcasting,
